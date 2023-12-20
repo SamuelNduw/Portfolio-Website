@@ -3,6 +3,7 @@ import { AiOutlineMenu, AiOutlineHome, AiOutlineProject, AiOutlineMail } from 'r
 import { BsPerson } from 'react-icons/bs';
 import { GrProjects } from 'react-icons/gr';
 import { Link, Element } from 'react-scroll';
+import { Fade } from 'react-awesome-reveal';
 
 
 function Navbar() {
@@ -57,6 +58,7 @@ function Navbar() {
 
         <div className='md:block hidden fixed top-[20%] z-10'> 
             <div className='flex flex-col ml-2 group'>
+            <Fade cascade damping={0.2}>
               <Link to='main' spy={true} smooth={true} offset={0} duration={500} className='flex rounded-lg shadow-lg bg-gray-100 shadow-gray-600 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300 opacity-50 hover:opacity-100'>
                 <AiOutlineHome  size={20}/>
                 <span className='hidden group-hover:block px-2 font-medium'>
@@ -87,6 +89,7 @@ function Navbar() {
                     CONTACT
                 </span>
               </Link>
+              </Fade>
             </div>
         </div>
 
