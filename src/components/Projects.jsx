@@ -9,6 +9,7 @@ import { SiTailwindcss } from "react-icons/si";
 import { SiMysql } from "react-icons/si";
 import { DiMsqlServer } from "react-icons/di";
 import { Element } from 'react-scroll';
+import { Fade } from 'react-awesome-reveal';
 
 
 const Projects = () => {
@@ -17,12 +18,15 @@ const Projects = () => {
     <div className='w-full  bg-[#e4e4e4] font-body' id='projects'>
         
         <div>
+            <Fade triggerOnce={true}>
             <div className='w-full md:pl-20 pl-16 pt-10'>
                 <h1 className='font-semibold text-5xl'>
                     Projects
                 </h1>
             </div>
-
+            </Fade>
+            
+            <Fade triggerOnce={true}>
             <div className='w-full h-[500px] mt-5 flex flex-row-reverse'>
                 {/* first card */}
                 <div className='px-2 w-full md:w-1/2 h-full flex justify-center items-center'>
@@ -51,16 +55,20 @@ const Projects = () => {
                         </div>
                     </div>
                 </div>
+                
                 {/* illutstration */}
                 <div className='w-0 md:w-1/2 h-full flex justify-center items-center'>
                     <img src={Coding} alt="" className='w-96 h-96 transform -scale-x-100 hidden md:block'/>
                 </div>
             </div>
+            </Fade>
+            
 
             
             <div className='w-full pb-10 grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-0 gap-14'>
 
                 {/* second card */}
+                <Fade cascade={false} delay={200} direction='up' triggerOnce={true}>
                 <div className='px-2 h-full flex justify-center items-center'>
                     <div className='bg-slate-800 sm:w-[450px] lg:h-auto lg:max-w-2xl max-w-none  w-full h-auto'>
                         <div className='bg-slate-800 w-full h-3/5 shadow-md shadow-gray-400 overflow-hidden '>
@@ -87,7 +95,9 @@ const Projects = () => {
                         </div>
                     </div>  
                 </div>
+                </Fade>
                 {/* third card */}
+                <Fade cascade={false} delay={300} direction='up' triggerOnce={true}>
                 <div className='px-2 h-full flex justify-center items-center'>
                     <div className='bg-slate-800 sm:w-[450px] lg:h-auto lg:max-w-2xl max-w-none  w-full h-auto'>
                         <div className='bg-slate-800 w-full h-3/5 shadow-md shadow-gray-400 overflow-hidden'>
@@ -113,7 +123,9 @@ const Projects = () => {
                         </div>
                     </div>  
                 </div>
+                </Fade>
                 {/* fourth card */}
+                <Fade cascade={false} delay={400} direction='up' triggerOnce={true}>
                 <div className='px-2 h-full flex justify-center items-center'>
                     <div className='bg-slate-800 sm:w-[450px] lg:h-auto lg:max-w-2xl max-w-none  w-full h-auto'>
                         <div className='bg-slate-800 w-full h-3/5 shadow-md shadow-gray-400 overflow-hidden '>
@@ -138,6 +150,7 @@ const Projects = () => {
                         </div>
                     </div>  
                 </div>
+                </Fade>
 
             </div>
             
