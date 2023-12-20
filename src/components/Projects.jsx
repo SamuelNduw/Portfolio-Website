@@ -8,14 +8,16 @@ import { FaReact, FaCss3Alt, FaHtml5, FaJava, FaJs, FaPython } from 'react-icons
 import { SiTailwindcss } from "react-icons/si";
 import { SiMysql } from "react-icons/si";
 import { DiMsqlServer } from "react-icons/di";
+import { Element } from 'react-scroll';
 
 
 const Projects = () => {
   return (
+    <Element name='projects'>
     <div className='w-full  bg-[#e4e4e4] font-body' id='projects'>
         
         <div>
-            <div className='w-full pl-16 pt-10'>
+            <div className='w-full md:pl-20 pl-16 pt-10'>
                 <h1 className='font-semibold text-5xl'>
                     Projects
                 </h1>
@@ -39,10 +41,10 @@ const Projects = () => {
                             </div>
                             <div className='w-full  h-1/3 flex  justify-around pt-5'>
                                 <button className=' bg-blue-700 px-4 py-2 xs:w-36 w-24 text-white capitalize'>
-                                    CODE
+                                    <a href="https://github.com/SamuelNduw/my-first-project" target='_blank'>CODE</a>
                                 </button>
                                 <button className='capitalize bg-gray-300 px-4 py-2 xs:w-36 w-24'>
-                                    LINK
+                                    <a href="https://samuelnduw.github.io/my-first-project/index.html" target='_blank'>LINK</a>
                                 </button>
                             </div>
                             
@@ -75,10 +77,10 @@ const Projects = () => {
                             </div>
                             <div className='w-full  h-1/3 flex  justify-around pt-5'>
                                 <button className=' bg-blue-700 px-4 py-2 xs:w-36 w-24 text-white capitalize text-base'>
-                                    CODE
+                                    <a href="https://github.com/SamuelNduw/Safari-Agency-1" target="_blank" >CODE</a>
                                 </button>
                                 <button className='capitalize bg-gray-300 px-4 py-2 xs:w-36 w-24'>
-                                    LINK
+                                    <a href="https://sammy-safari-agency.netlify.app/" target="_blank">LINK</a>
                                 </button>
                             </div>
                             
@@ -101,10 +103,10 @@ const Projects = () => {
                             </div>
                             <div className='w-full  h-1/3 flex  justify-around pt-5'>
                                 <button className=' bg-blue-700 px-4 py-2 xs:w-36 w-24 text-white  capitalize text-base'>
-                                    CODE
+                                    <a href="https://github.com/Friendly-Private-School/fps-web" target="_blank" >CODE</a>
                                 </button>
                                 <button className='capitalize bg-gray-300 text-black px-4 py-2 xs:w-36 w-24  '>
-                                    LINK
+                                    <a href="https://friendlyprivateschool.org/" target="_blank">LINK</a>
                                 </button>
                             </div>
                             
@@ -126,10 +128,10 @@ const Projects = () => {
                             </div>
                             <div className='w-full  h-1/3 flex  justify-around pt-5'>
                                 <button className=' bg-blue-700 px-4 py-2 xs:w-36 w-24 text-white capitalize text-base'>
-                                    CODE
+                                    <a href="https://github.com/SamuelNduw/Classroom_Management_System" target="_blank" >CODE</a>
                                 </button>
                                 <button className='capitalize bg-gray-300 px-4 py-2 xs:w-36 w-24 hidden'>
-                                    LINK
+                                    <a href="" target="_blank">LINK</a>
                                 </button>
                             </div>
                             
@@ -142,6 +144,8 @@ const Projects = () => {
         </div>
         
     </div>
+    </Element>
+    
   )
 }
 

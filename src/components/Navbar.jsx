@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { AiOutlineMenu, AiOutlineHome, AiOutlineProject, AiOutlineMail } from 'react-icons/ai';
 import { BsPerson } from 'react-icons/bs';
 import { GrProjects } from 'react-icons/gr';
+import { Link, Element } from 'react-scroll';
+
 
 function Navbar() {
 
@@ -16,22 +18,36 @@ function Navbar() {
         {
           nav ? (
               <div className="fixed w-full h-screen bg-white/90 flex flex-col justify-center items-center z-20">
-                <a onClick={handleNav} href="#main" className="w-[45%] flex justify-center items-center rounded-lg font-medium shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-105 ease-in duration-150">
-                  <AiOutlineHome size={20} />
-                  <span className="pl-4">HOME</span>
-                </a>
-                <a onClick={handleNav} href="#projects" className="w-[45%] flex justify-center items-center rounded-lg font-medium shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-105 ease-in duration-150">
-                  <GrProjects size={20} />
-                  <span className="pl-4">PROJECTS</span>
-                </a>
-                <a onClick={handleNav} href="#skills" className="w-[45%] flex justify-center items-center rounded-lg font-medium shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-105 ease-in duration-150">
-                  <AiOutlineProject size={20} />
-                  <span className="pl-4">SKILLS</span>
-                </a>
-                <a onClick={handleNav} href="#contact" className="w-[45%] flex justify-center items-center rounded-lg font-medium shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-105 ease-in duration-150">
-                  <AiOutlineMail size={20} />
-                  <span className="pl-4">CONTACT</span>
-                </a>
+                
+                  <Link to='main' spy={true} smooth={true} offset={0} duration={500} className='flex justify-center items-center w-[45%] rounded-lg font-medium shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-105 ease-in duration-150' onClick={handleNav}>
+                    <AiOutlineHome size={20} />
+                    <span className="pl-4">HOME</span>
+                  </Link>
+                
+                
+                  <Link to='about' spy={true} smooth={true} offset={-20} duration={500} className='flex justify-center items-center w-[45%] rounded-lg font-medium shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-105 ease-in duration-150' onClick={handleNav}>
+                    <BsPerson size={20} />
+                    <span className="pl-4">ABOUT</span>
+                  </Link>
+                
+                
+                  <Link to='projects' spy={true} smooth={true} offset={-20} duration={500} className='flex justify-center items-center w-[45%] rounded-lg font-medium shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-105 ease-in duration-150' onClick={handleNav}>
+                    <GrProjects size={20} />
+                    <span className="pl-4">PROJECTS</span>
+                  </Link>
+                
+                
+                  <Link to='skills' spy={true} smooth={true} offset={-20} duration={600} className='flex justify-center items-center w-[45%] rounded-lg font-medium shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-105 ease-in duration-150' onClick={handleNav}>
+                    <AiOutlineProject size={20} />
+                    <span className="pl-4">SKILLS</span>
+                  </Link>
+                
+                
+                  <Link to='contact' spy={true} smooth={true} offset={-20} duration={700} className='flex justify-center items-center w-[45%] rounded-lg font-medium shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-105 ease-in duration-150' onClick={handleNav}>
+                    <AiOutlineMail size={20} />
+                    <span className="pl-4">CONTACT</span>
+                  </Link>
+                
               </div>
           ) 
           : (
@@ -41,36 +57,36 @@ function Navbar() {
 
         <div className='md:block hidden fixed top-[20%] z-10'> 
             <div className='flex flex-col ml-2 group'>
-              <a href="#main" className='flex rounded-lg shadow-lg bg-gray-100 shadow-gray-600 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300 opacity-50 hover:opacity-100'>
+              <Link to='main' spy={true} smooth={true} offset={0} duration={500} className='flex rounded-lg shadow-lg bg-gray-100 shadow-gray-600 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300 opacity-50 hover:opacity-100'>
                 <AiOutlineHome  size={20}/>
                 <span className='hidden group-hover:block px-2 font-medium'>
                   HOME
                 </span>
-              </a>
-              <a href="#projects" className='flex rounded-lg shadow-lg bg-gray-100 shadow-gray-600 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300 opacity-50 hover:opacity-100'>
+              </Link>
+              <Link to='about' spy={true} smooth={true} offset={-20} duration={500} className='flex rounded-lg shadow-lg bg-gray-100 shadow-gray-600 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300 opacity-50 hover:opacity-100'>
+                <BsPerson  size={20}/>
+                <span className='hidden group-hover:block px-2 font-medium'>
+                  ABOUT
+                </span>
+              </Link>
+              <Link to='projects' spy={true} smooth={true} offset={-20} duration={500} className='flex rounded-lg shadow-lg bg-gray-100 shadow-gray-600 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300 opacity-50 hover:opacity-100'>
                 <GrProjects  size={20}/>
                 <span className='hidden group-hover:block px-2 font-medium'>
-                  PROJECTS
+                    PROJECTS
                 </span>
-              </a>
-              <a href="#skills" className='flex rounded-lg shadow-lg bg-gray-100 shadow-gray-600 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300 opacity-50 hover:opacity-100'>
+              </Link>
+              <Link to='skills' spy={true} smooth={true} offset={-20} duration={600} className='flex rounded-lg shadow-lg bg-gray-100 shadow-gray-600 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300 opacity-50 hover:opacity-100'>
                 <AiOutlineProject  size={20}/>
                 <span className='hidden group-hover:block px-2 font-medium'>
                   SKILLS
                 </span>
-              </a>
-              {/* <a href="#resume" className='flex rounded-lg shadow-lg bg-gray-100 shadow-gray-600 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300 opacity-50 hover:opacity-100'>
-                <BsPerson  size={20}/>
-                <span className='hidden group-hover:block px-2 font-medium'>
-
-                </span>
-              </a> */}
-              <a href="#mail" className='flex rounded-lg shadow-lg bg-gray-100 shadow-gray-600 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300 opacity-50 hover:opacity-100'>
+              </Link>
+              <Link to='contact' spy={true} smooth={true} offset={-20} duration={700} className='flex rounded-lg shadow-lg bg-gray-100 shadow-gray-600 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300 opacity-50 hover:opacity-100'>
                 <AiOutlineMail  size={20}/>
                 <span className='hidden group-hover:block px-2 font-medium'>
-                  CONTACT
+                    CONTACT
                 </span>
-              </a>
+              </Link>
             </div>
         </div>
 

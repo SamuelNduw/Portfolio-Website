@@ -4,13 +4,15 @@ import { SiTailwindcss } from "react-icons/si";
 import { SiMysql } from "react-icons/si";
 import { DiMsqlServer } from "react-icons/di";
 import SkillsItem from './SkillsItem';
+import { Element } from 'react-scroll';
 
 const Skills = () => {
   return (
-    <div className='w-full bg-slate-500 font-body' id='skills'>
+    <Element name='skills'>
+    <div className='w-full bg-slate-300 font-body' id='skills'>
 
-        <div className='w-full pl-16 pt-10'>
-            <h1 className='font-semibold text-5xl text-white'>
+        <div className='max-w-[1040px] m-auto  md:pl-20 p-4 pt-16'>
+            <h1 className='font-semibold text-5xl text-black '>
                 Skills
             </h1>
         </div>
@@ -27,6 +29,7 @@ const Skills = () => {
         </section>
 
     </div>
+    </Element>
   )
 }
 

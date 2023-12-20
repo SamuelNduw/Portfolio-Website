@@ -1,18 +1,20 @@
-import React from 'react'
+import React from 'react';
+import { Element } from 'react-scroll';
 
 const Contact = () => {
   return (
+    <Element name='contact'>
     <div id="contact" className='max-w-[1040px] m-auto md:pl-20 p-4 py-16 font-body'>
 
         <h1 className='text-5xl font-semibold '>
             Contact
         </h1>
 
-        <form action="https://getform.io/f/957086e1-1426-4ccf-bd21-37a84a0f4117" method='POST' encType='multipart/form-data'>
+        <form action="https://getform.io/f/957086e1-1426-4ccf-bd21-37a84a0f4117" method='POST' encType='multipart/form-data' autoComplete='on'>
             <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
                 <div className='flex flex-col'>
                     <label htmlFor="" className='uppercase text-sm py-2'>Name</label>
-                    <input className='border-2 rounded-md p-3 border-gray-400' type="text" name='name'/>
+                    <input className='border-2 rounded-md p-3 border-gray-400' type="text" name='name' autoComplete='on'/>
                 </div>
                 <div className='flex flex-col'>
                     <label htmlFor="" className='uppercase text-sm py-2'>Phone Number</label>
@@ -38,6 +40,7 @@ const Contact = () => {
             </button>
         </form>
     </div>
+    </Element>
   )
 }
 
