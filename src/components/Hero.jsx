@@ -40,9 +40,15 @@ const Hero = () => {
               </Fade>
               <div className='w-full mt-2 flex gap-5 justify-center'>
                 <Fade direction='up' triggerOnce={true}>
-                  <FaGithub fill='white' size={25} className='shadow-gray-100 hover:scale-105 ease-in duration-150 cursor-pointer'/>
-                  <FaLinkedinIn fill='white' size={25} className='shadow-gray-100 hover:scale-105 ease-in duration-150 cursor-pointer'/>
-                  <FaTwitter fill='white' size={25} className='shadow-gray-100 hover:scale-105 ease-in duration-150 cursor-pointer'/>
+                  <a href="https://github.com/SamuelNduw" target="_blank" rel="noopener noreferrer">
+                    <FaGithub fill='white' size={25} className='shadow-gray-100 hover:scale-105 ease-in duration-150 cursor-pointer'/>
+                  </a>
+                  <a href="https://www.linkedin.com/in/samuel-nduw-53153126a/" target="_blank" rel="noopener noreferrer">
+                    <FaLinkedinIn fill='white' size={25} className='shadow-gray-100 hover:scale-105 ease-in duration-150 cursor-pointer'/>
+                  </a>
+                  <a href="https://twitter.com/SamNduw" target="_blank" rel="noopener noreferrer">
+                    <FaTwitter fill='white' size={25} className='shadow-gray-100 hover:scale-105 ease-in duration-150 cursor-pointer'/>
+                  </a>
                 </Fade>
               </div>
           </div>
