@@ -38,7 +38,7 @@ const Hero = () => {
                 />
               </h2>
               </Fade>
-              <div className='w-full mt-2 flex gap-5 justify-center'>
+              <div className='w-full mt-2 flex gap-5 lg:justify-end justify-center'>
                 <Fade direction='up' triggerOnce={true}>
                   <a href="https://github.com/SamuelNduw" target="_blank" rel="noopener noreferrer">
                     <FaGithub fill='white' size={25} className='shadow-gray-100 hover:scale-105 ease-in duration-150 cursor-pointer'/>

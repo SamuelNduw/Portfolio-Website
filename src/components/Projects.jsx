@@ -19,7 +19,7 @@ const Projects = () => {
         
         <div>
             <Fade triggerOnce={true}>
-            <div className='w-full md:pl-20 pl-16 pt-10'>
+            <div className='max-w-[1040px] m-auto md:pl-20 p-4 pt-16 md:pb-16 pb-2'>
                 <h1 className='font-semibold text-5xl'>
                     Projects
                 </h1>
@@ -27,7 +27,7 @@ const Projects = () => {
             </Fade>
             
             <Fade triggerOnce={true}>
-            <div className='w-full h-[500px] mt-5 flex flex-row-reverse'>
+            <div className='w-full h-[500px]  flex flex-row-reverse'>
                 {/* first card */}
                 <div className='px-2 w-full md:w-1/2 h-full flex justify-center items-center'>
                     <div className='bg-slate-800 sm:w-[450px] lg:h-auto lg:max-w-2xl max-w-none  w-full h-auto'>
