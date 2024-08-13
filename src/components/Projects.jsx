@@ -48,7 +48,7 @@ const Projects = () => {
                                     <a href="https://github.com/SamuelNduw/my-first-project" target='_blank'>CODE</a>
                                 </button>
                                 <button className='capitalize bg-gray-300 px-4 py-2 xs:w-36 w-24'>
-                                    <a href="https://samuelnduw.github.io/my-first-project/index.html" target='_blank'>LINK</a>
+                                    <a href="https://samuel-my-first-website.netlify.app" target='_blank'>LINK</a>
                                 </button>
                             </div>
                             
