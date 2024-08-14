@@ -1,7 +1,7 @@
 import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
-import { FaTwitter, FaFacebookF,FaInstagram, FaLinkedinIn, FaGithub} from 'react-icons/fa';
-import profilePic from '../assets/profilePic.jpg';
+import { FaTwitter, FaLinkedinIn, FaGithub} from 'react-icons/fa';
+import profilePic from '../assets/profilePicture.jpg';
 import { Element } from 'react-scroll';
 import { Fade } from 'react-awesome-reveal';
 
