@@ -8,8 +8,8 @@ const ProjectItem = ({children, img, title, codeURL, pageLink}) => {
             <>
             <Fade cascade={false} delay={400} direction='up' triggerOnce={true}>
                 <div className='px-2 h-full flex justify-center items-center'>
-                    <div className='bg-slate-800 max-w-md  w-full h-auto'>
-                        <div className='bg-slate-800 w-full h-60 shadow-md shadow-gray-400 overflow-hidden '>
+                    <div className='bg-slate-800 max-w-md  w-full '>
+                        <div className='bg-slate-800 w-full max-h-56 shadow-md shadow-gray-400 overflow-hidden '>
                             <img src={img} className='w-full hover:scale-105 ease-in-out duration-300 object-contain'/>
                         </div>
                         <div className='bg-slate-800 w-full h-2/5 shadow-md shadow-gray-400 flex flex-col pb-5'>
