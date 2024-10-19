@@ -35,7 +35,7 @@ const Projects = () => {
                     <SiTailwindcss size={30} fill='#38BDF8' />
                 </ProjectItem>
                 {/* second card */}
-                <ProjectItem img={AirlineRes} title="Airline Seat Reservation" codeURL="https://github.com/SamuelNduw/AirlineSeatReservationSystem" pageLink="">
+                <ProjectItem img={AirlineRes} title="Airline Seat Reservation" codeURL="https://github.com/SamuelNduw/AirlineSeatReservationSystem" pageLink="https://youtu.be/yVX4BLEmU24">
                     <FaJava size={30} fill='red' className='shadow-gray-800'/>
                     <SiMysql size={30} fill='white' className='shadow-gray-800'/>
                 </ProjectItem>

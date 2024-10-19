@@ -1,4 +1,4 @@
-import {React, useState} from 'react';
+import {React} from 'react';
 import {Fade} from 'react-awesome-reveal';
 
 const ProjectItem = ({children, img, title, codeURL, pageLink}) => {
@@ -30,7 +30,7 @@ const ProjectItem = ({children, img, title, codeURL, pageLink}) => {
                                 {
                                     pageLink ?
                                     <button className='capitalize bg-gray-300 px-4 py-2 xs:w-36 w-24'>
-                                        <a href={pageLink} target='_blank'>LINK</a>
+                                        <a href={pageLink} target='_blank'>VIEW</a>
                                     </button> :
                                     null
                                 }
