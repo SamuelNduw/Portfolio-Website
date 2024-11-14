@@ -19,7 +19,7 @@ const Contact = () => {
             <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
                 <div className='flex flex-col'>
                     <label htmlFor="" className='uppercase text-sm py-2'>Name</label>
-                    <input className='border-2 rounded-md p-3 border-gray-400' type="text" name='name' autoComplete='on'/>
+                    <input className='border-2 rounded-md p-3 border-gray-400' type="text" name='name' autoComplete='on' required/>
                 </div>
                 <div className='flex flex-col'>
                     <label htmlFor="" className='uppercase text-sm py-2'>Phone Number</label>
@@ -28,7 +28,7 @@ const Contact = () => {
             </div>
             <div className='flex flex-col py-2'>
                 <label htmlFor="" className='uppercase text-sm py-2'>Email</label>
-                <input className='border-2 rounded-md p-3 border-gray-400' type="text" name='email'/>
+                <input className='border-2 rounded-md p-3 border-gray-400' type="text" name='email' required/>
             </div>
             <div className='flex flex-col py-2'>
                 <label htmlFor="" className='uppercase text-sm py-2'>Subject</label>
@@ -36,7 +36,7 @@ const Contact = () => {
             </div>
             <div className='flex flex-col py-2'>
                 <label htmlFor="" className='uppercase text-sm py-2'>Message</label>
-                <textarea className='border-2 rounded-md p-3 border-gray-400' name='message' rows="10"></textarea>
+                <textarea className='border-2 rounded-md p-3 border-gray-400' name='message' rows="10" required></textarea>
             </div>
             <input type="hidden" name="_gotcha" className='hidden'></input>
 
