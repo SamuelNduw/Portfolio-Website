@@ -15,7 +15,7 @@ const About = () => {
         <div className='w-4/5 py-12'>
           <Fade triggerOnce={true}>
             <p>
-            I am a web developer and software engineer with a strong proficiency in HTML, CSS, and JavaScript. I am currently in my second year of computer science at university, where I am constantly expanding my knowledge and skills in programming and software development.
+            I am a web developer and software engineer with a strong proficiency in HTML, CSS, and JavaScript. I am currently in my third year of Computer Science at university, where I am constantly expanding my knowledge and skills in programming and software development.
             <br /> <br />
             I am proficient in Python, React JS, and Java with experience using SSMS and MySQL.
 
