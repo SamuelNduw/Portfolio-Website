@@ -22,16 +22,16 @@ const ProjectItem = ({children, img, title, codeURL, pageLink}) => {
                             <div className='w-full  h-1/3 flex  justify-around pt-5'>
                                 {
                                     codeURL ?
-                                    <button className=' bg-blue-700 px-4 py-2 xs:w-36 w-24 text-white capitalize text-base'>
-                                        <a href={codeURL} target="_blank" rel="noopener noreferrer">CODE</a>
-                                    </button> :
+                                    <a href={codeURL} target="_blank" rel="noopener noreferrer" className=' text-center bg-blue-700 px-4 py-2 xs:w-36 w-24 text-white capitalize text-base'>
+                                        CODE
+                                    </a> :
                                     null
                                 }
                                 {
                                     pageLink ?
-                                    <button className='capitalize bg-gray-300 px-4 py-2 xs:w-36 w-24'>
-                                        <a href={pageLink} target='_blank'>VIEW</a>
-                                    </button> :
+                                    <a href={pageLink} target='_blank' className='text-center capitalize bg-gray-300 px-4 py-2 xs:w-36 w-24'>
+                                        VIEW
+                                    </a> :
                                     null
                                 }
                             </div>
