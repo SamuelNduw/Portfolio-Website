@@ -1,4 +1,5 @@
 import React from 'react';
+import ChurchSite from '../assets/churchSite.png'
 import GamingSite from '../assets/gamingSite.jpg';
 import SafariSite from '../assets/safariSite.jpg';
 import SchoolSite from '../assets/schoolSite.jpg';
@@ -35,17 +36,22 @@ const Projects = () => {
                     <SiTailwindcss size={30} fill='#38BDF8' />
                 </ProjectItem>
                 {/* second card */}
+                <ProjectItem img={ChurchSite} title="CLMI Sauyemwa" codeURL="" pageLink="https://christsloveministriessauyemwa.com/">
+                    <FaReact size={30} fill='#38BDF8' className='shadow-gray-800'/>
+                    <SiTailwindcss size={30} fill='#38BDF8' />
+                </ProjectItem>
+                {/* third card */}
                 <ProjectItem img={AirlineRes} title="Airline Seat Reservation" codeURL="https://github.com/SamuelNduw/AirlineSeatReservationSystem" pageLink="https://youtu.be/yVX4BLEmU24">
                     <FaJava size={30} fill='red' className='shadow-gray-800'/>
                     <SiMysql size={30} fill='white' className='shadow-gray-800'/>
                 </ProjectItem>
-                {/* third card */}
+                {/* fourth card */}
                 <ProjectItem  img={GamingSite} title="Gaming Store" codeURL="https://github.com/SamuelNduw/my-first-project" pageLink="https://samuel-my-first-website.netlify.app">
                     <FaJs size={30} fill='#f0db4f' className='shadow-gray-800'/>
                     <FaCss3Alt size={30} fill='#264de4' />
                     <FaHtml5 size={30} fill='#f06529' />
                 </ProjectItem>
-                {/* fourth card */}
+                {/* fifth card */}
                 <ProjectItem  img={SafariSite} title="Safari Agency" codeURL="https://github.com/SamuelNduw/Safari-Agency-1" pageLink="https://sammy-safari-agency.netlify.app/">
                     <FaJs size={30} fill='#f0db4f' className='shadow-gray-800'/>
                     <SiTailwindcss size={30} fill='#38BDF8' />
