@@ -1,6 +1,6 @@
 import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
-import { FaTwitter, FaLinkedinIn, FaGithub} from 'react-icons/fa';
+import { FaYoutube, FaLinkedinIn, FaGithub, FaTiktok} from 'react-icons/fa';
 import profilePic from '../assets/profilePicture.jpg';
 import { Element } from 'react-scroll';
 import { Fade } from 'react-awesome-reveal';
@@ -46,8 +46,11 @@ const Hero = () => {
                   <a href="https://www.linkedin.com/in/samuel-nduw-53153126a/" target="_blank" rel="noopener noreferrer">
                     <FaLinkedinIn fill='white' size={25} className='shadow-gray-100 hover:scale-105 ease-in duration-150 cursor-pointer'/>
                   </a>
-                  <a href="https://twitter.com/SamNduw" target="_blank" rel="noopener noreferrer">
-                    <FaTwitter fill='white' size={25} className='shadow-gray-100 hover:scale-105 ease-in duration-150 cursor-pointer'/>
+                  <a href="https://www.tiktok.com/@samuelthedev" target="_blank" rel="noopener noreferrer">
+                    <FaTiktok fill='white' size={25} className='shadow-gray-100 hover:scale-105 ease-in duration-150 cursor-pointer'/>
+                  </a>
+                  <a href="https://www.youtube.com/@samuelthedev" target="_blank" rel="noopener noreferrer">
+                    <FaYoutube fill='white' size={25} className='shadow-gray-100 hover:scale-105 ease-in duration-150 cursor-pointer'/>
                   </a>
                 </Fade>
               </div>

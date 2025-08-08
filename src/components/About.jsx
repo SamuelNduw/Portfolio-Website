@@ -15,11 +15,12 @@ const About = () => {
         <div className='w-4/5 py-12'>
           <Fade triggerOnce={true}>
             <p>
-            I am a web developer and software engineer with a strong proficiency in HTML, CSS, and JavaScript. I am currently in my third year of Computer Science at university, where I am constantly expanding my knowledge and skills in programming and software development.
+            I am a software engineer with a strong proficiency in Python and React JS. I am currently in my third year of Computer Science at university, where I am constantly expanding my knowledge and skills in programming.
             <br /> <br />
-            I am proficient in Python, React JS, and Java with experience using SSMS and MySQL.
-
-            My skills enable me to develop a wide range of applications, including complex and dynamic web applications and efficient desktop applications.
+            I enjoy building web apps using React and Django Rest Framework.
+            With great interest in AI, I have developed projects that leverage closed and open source AI models, though Ollama and APIs.
+            <br /> <br />
+            My aim is to become an AI engineer and/or researcher.
             </p>
           </Fade>
         </div>

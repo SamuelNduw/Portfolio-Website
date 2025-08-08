@@ -2,7 +2,7 @@ import React from 'react';
 import { FaReact, FaCss3Alt, FaHtml5, FaJava, FaJs, FaPython } from 'react-icons/fa';
 import { SiTailwindcss } from "react-icons/si";
 import { SiMysql } from "react-icons/si";
-import { DiMsqlServer } from "react-icons/di";
+import { DiDjango} from "react-icons/di";
 import SkillsItem from './SkillsItem';
 import { Element } from 'react-scroll';
 import { Fade } from 'react-awesome-reveal';
@@ -27,8 +27,8 @@ const Skills = () => {
                 <SkillsItem icon={<FaReact size={100} fill='#38BDF8'/>} title='REACT JS'/>
                 <SkillsItem icon={<SiTailwindcss size={100} fill='#38BDF8'/>} title='TAILWIND CSS'/>
                 <SkillsItem icon={<FaPython size={100} fill='#ffde57'/>} title='PYTHON'/>
+                <SkillsItem icon={<DiDjango size={100} fill='#092E20' />} title='DJANGO REST FRAMEWORK'/>
                 <SkillsItem icon={<SiMysql size={100} />} title='MYSQL'/>
-                <SkillsItem icon={<DiMsqlServer size={100} />} title='SSMS'/>
                 <SkillsItem icon={<FaJava size={100} fill='red'/>} title='JAVA'/>
             </Fade>
             </div>

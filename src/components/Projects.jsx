@@ -4,9 +4,10 @@ import GamingSite from '../assets/gamingSite.jpg';
 import SafariSite from '../assets/safariSite.jpg';
 import SchoolSite from '../assets/schoolSite.jpg';
 import AirlineRes from '../assets/airlineRes.jpg';
+import BloggingAI from '../assets/Blogging2.png';
 import { FaReact, FaCss3Alt, FaHtml5, FaJava, FaJs} from 'react-icons/fa';
-import { SiTailwindcss } from "react-icons/si";
-import { SiMysql } from 'react-icons/si';
+import { SiTailwindcss, SiMysql, SiPython, SiFirebase, SiFlutter } from "react-icons/si";
+import { DiDjango } from "react-icons/di";
 import { Element } from 'react-scroll';
 import { Fade } from 'react-awesome-reveal';
 
@@ -31,36 +32,44 @@ const Projects = () => {
             
             <div className='container mx-auto grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 justify-items-center pb-16'>
                 {/* first card */}
-                <ProjectItem img={SchoolSite} title="Friendly Private School" codeURL="https://github.com/Friendly-Private-School/fps-web" pageLink="https://friendlyprivateschool.org/">
+                <ProjectItem img={BloggingAI} title="Blogging AI" codeURL="https://github.com/SamuelNduw/Blogging" postLink="https://www.linkedin.com/posts/samuel-nduw-53153126a_during-the-past-two-weeks-i-tasked-myself-activity-7356402971745648640-w5ZM?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEHuGLUBAjPdFfRcNXWdJ2wYAVh7TTmYi3k">
                     <FaReact size={30} fill='#38BDF8' className='shadow-gray-800'/>
                     <SiTailwindcss size={30} fill='#38BDF8' />
+                    <SiPython size={30} fill='#FFD43B'/>
+                    <SiFirebase size={30} fill='#F6820D'/>
                 </ProjectItem>
                 {/* second card */}
+                <ProjectItem img={SchoolSite} title="Hockey App" codeURL="https://github.com/SamuelNduw/MAP-Project" postLink="https://www.linkedin.com/posts/samuel-nduw-53153126a_mobile-app-development-does-seem-interesting-activity-7359536881400713216-s4Vw?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEHuGLUBAjPdFfRcNXWdJ2wYAVh7TTmYi3k">
+                    <SiFlutter size={30} fill='#027DFD' className='shadow-gray-800'/>
+                    <SiPython size={30} fill='#FFD43B'/>
+                </ProjectItem>
+                {/* third card */}
                 <ProjectItem img={ChurchSite} title="CLMI Sauyemwa" codeURL="" pageLink="https://christsloveministriessauyemwa.com/">
                     <FaReact size={30} fill='#38BDF8' className='shadow-gray-800'/>
                     <SiTailwindcss size={30} fill='#38BDF8' />
                 </ProjectItem>
-                {/* third card */}
+                {/* fourth card */}
                 <ProjectItem img={AirlineRes} title="Airline Seat Reservation" codeURL="https://github.com/SamuelNduw/AirlineSeatReservationSystem" pageLink="https://youtu.be/yVX4BLEmU24">
                     <FaJava size={30} fill='red' className='shadow-gray-800'/>
                     <SiMysql size={30} fill='white' className='shadow-gray-800'/>
                 </ProjectItem>
-                {/* fourth card */}
+                {/* fifth card */}
                 <ProjectItem  img={GamingSite} title="Gaming Store" codeURL="https://github.com/SamuelNduw/my-first-project" pageLink="https://samuel-my-first-website.netlify.app">
                     <FaJs size={30} fill='#f0db4f' className='shadow-gray-800'/>
                     <FaCss3Alt size={30} fill='#264de4' />
                     <FaHtml5 size={30} fill='#f06529' />
                 </ProjectItem>
-                {/* fifth card */}
                 <ProjectItem  img={SafariSite} title="Safari Agency" codeURL="https://github.com/SamuelNduw/Safari-Agency-1" pageLink="https://sammy-safari-agency.netlify.app/">
                     <FaJs size={30} fill='#f0db4f' className='shadow-gray-800'/>
                     <SiTailwindcss size={30} fill='#38BDF8' />
                     <FaHtml5 size={30} fill='#f06529' />                    
                 </ProjectItem>
+                <ProjectItem img={SchoolSite} title="Friendly Private School" codeURL="https://github.com/Friendly-Private-School/fps-web" pageLink="https://friendlyprivateschool.org/">
+                    <FaReact size={30} fill='#38BDF8' className='shadow-gray-800'/>
+                    <SiTailwindcss size={30} fill='#38BDF8' />
+                </ProjectItem>
 
             </div>
-
-            {/* testing */}
             
         </div>
         
