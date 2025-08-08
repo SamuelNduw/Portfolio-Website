@@ -1,13 +1,13 @@
 import React from 'react';
-import ChurchSite from '../assets/churchSite.png'
+import ChurchSite from '../assets/churchSite-min.png'
 import GamingSite from '../assets/gamingSite.jpg';
 import SafariSite from '../assets/safariSite.jpg';
 import SchoolSite from '../assets/schoolSite.jpg';
 import AirlineRes from '../assets/airlineRes.jpg';
 import BloggingAI from '../assets/Blogging2.png';
+import HockeyApp from '../assets/HockeyAppProjectThumbnail-min.png'
 import { FaReact, FaCss3Alt, FaHtml5, FaJava, FaJs} from 'react-icons/fa';
 import { SiTailwindcss, SiMysql, SiPython, SiFirebase, SiFlutter } from "react-icons/si";
-import { DiDjango } from "react-icons/di";
 import { Element } from 'react-scroll';
 import { Fade } from 'react-awesome-reveal';
 
@@ -39,7 +39,7 @@ const Projects = () => {
                     <SiFirebase size={30} fill='#F6820D'/>
                 </ProjectItem>
                 {/* second card */}
-                <ProjectItem img={SchoolSite} title="Hockey App" codeURL="https://github.com/SamuelNduw/MAP-Project" postLink="https://www.linkedin.com/posts/samuel-nduw-53153126a_mobile-app-development-does-seem-interesting-activity-7359536881400713216-s4Vw?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEHuGLUBAjPdFfRcNXWdJ2wYAVh7TTmYi3k">
+                <ProjectItem img={HockeyApp} title="Hockey App" codeURL="https://github.com/SamuelNduw/MAP-Project" postLink="https://www.linkedin.com/posts/samuel-nduw-53153126a_mobile-app-development-does-seem-interesting-activity-7359536881400713216-s4Vw?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEHuGLUBAjPdFfRcNXWdJ2wYAVh7TTmYi3k">
                     <SiFlutter size={30} fill='#027DFD' className='shadow-gray-800'/>
                     <SiPython size={30} fill='#FFD43B'/>
                 </ProjectItem>
