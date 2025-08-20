@@ -6,6 +6,7 @@ import SchoolSite from '../assets/schoolSite.jpg';
 import AirlineRes from '../assets/airlineRes.jpg';
 import BloggingAI from '../assets/Blogging2.png';
 import HockeyApp from '../assets/HockeyAppProjectThumbnail-min.png'
+import HospitalSite from '../assets/hospitalwebsite.png'
 import { FaReact, FaCss3Alt, FaHtml5, FaJava, FaJs} from 'react-icons/fa';
 import { SiTailwindcss, SiMysql, SiPython, SiFirebase, SiFlutter, SiSqlite } from "react-icons/si";
 import { Element } from 'react-scroll';
@@ -62,12 +63,19 @@ const Projects = () => {
                     <SiMysql size={30} fill='white' className='shadow-gray-800'/>
                 </ProjectItem>
                 {/* sixth card */}
+                <ProjectItem  img={HospitalSite} title="Hospital Management" codeURL="https://github.com/SamuelNduw/WAD-Project/" pageLink="https://www.youtube.com/shorts/C_jWPDN-NwE">
+                    <FaJs size={30} fill='#f0db4f' className='shadow-gray-800'/>
+                    <FaCss3Alt size={30} fill='#264de4' />
+                    <FaHtml5 size={30} fill='#f06529' />
+                    <SiPython size={30} fill='#FFD43B'/>
+                </ProjectItem>
+                {/* seventh card */}
                 <ProjectItem  img={GamingSite} title="Gaming Store" codeURL="https://github.com/SamuelNduw/my-first-project" pageLink="https://samuel-my-first-website.netlify.app">
                     <FaJs size={30} fill='#f0db4f' className='shadow-gray-800'/>
                     <FaCss3Alt size={30} fill='#264de4' />
                     <FaHtml5 size={30} fill='#f06529' />
                 </ProjectItem>
-                {/* seventh card */}
+                {/* eighth card */}
                 <ProjectItem  img={SafariSite} title="Safari Agency" codeURL="https://github.com/SamuelNduw/Safari-Agency-1" pageLink="https://sammy-safari-agency.netlify.app/">
                     <FaJs size={30} fill='#f0db4f' className='shadow-gray-800'/>
                     <SiTailwindcss size={30} fill='#38BDF8' />
